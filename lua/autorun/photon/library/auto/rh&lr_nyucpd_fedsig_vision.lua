@@ -12,13 +12,13 @@ COMPONENT.Category = "Lightbar"
 COMPONENT.RotationEnabled = true
 COMPONENT.Bodygroups = {}
 COMPONENT.DefaultColors = {
-	[1] = "BLUE_HALOGEN",
+	[1] = "AMBER/RED_HALOGEN",
 	[2] = "S_WHITE",
 	[3] = "RED_HALOGEN",
 	[4] = "S_WHITE",
 	[5] = "RED_HALOGEN",
 	[6] = "S_WHITE",
-	[7] = "BLUE_HALOGEN",
+	[7] = "AMBER/RED_HALOGEN",
 	-- 
 	[8] = "AMBER",
 }
@@ -130,8 +130,7 @@ COMPONENT.BoneOperations = {
 		Default = { "S", 90, 25 },
 		Illumination = {},
 		Primary = {
-			M1 = { "RP", 0, 41.5 }, -- static at 0 degrees
-			M2 = { "S", 180, 25 }, -- static at 0 degrees
+			M2 = { "RP", 0, 41.5 }, -- static at 0 degrees
 			M3 = { "RP", 0, 83 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
@@ -140,8 +139,7 @@ COMPONENT.BoneOperations = {
 		Default = { "S", 0, 25 },
 		Illumination = {},
 		Primary = {
-			M1 = { "S", 0, 25 }, -- static at 0 degrees
-			M2 = { "S", 180, 25 }, -- static at 0 degrees
+			M2 = { "S", 0, 25 }, -- static at 0 degrees
 			M3 = { "RP", 0, -60 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
@@ -154,8 +152,7 @@ COMPONENT.BoneOperations = {
 		Default = { "S", 190, 25 },
 		Illumination = {},
 		Primary = {
-			M1 = { "RP", 0, 41.5 }, -- static at 0 degrees
-			M2 = { "S", 180, 25 }, -- static at 0 degrees
+			M2 = { "RP", 0, 41.5 }, -- static at 0 degrees
 			M3 = { "RP", 0, 83 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
@@ -164,8 +161,7 @@ COMPONENT.BoneOperations = {
 		Default = { "S", 240, 25 },
 		Illumination = {},
 		Primary = {
-			M1 = { "S", 0, 25 }, -- static at 0 degrees
-			M2 = { "S", 180, 25 }, -- static at 0 degrees
+			M2 = { "S", 0, 25 }, -- static at 0 degrees
 			M3 = { "RP", 0, -60 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
@@ -179,8 +175,7 @@ COMPONENT.BoneOperations = {
 		Default = { "S", 100, 25 },
 		Illumination = {},
 		Primary = {
-			M1 = { "RP", 0, 41.5 }, -- static at 0 degrees
-			M2 = { "S", 180, 25 }, -- static at 0 degrees
+			M2 = { "RP", 0, 41.5 }, -- static at 0 degrees
 			M3 = { "RP", 0, 83 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
@@ -189,8 +184,7 @@ COMPONENT.BoneOperations = {
 		Default = { "S", 120, 25 },
 		Illumination = {},
 		Primary = {
-			M1 = { "S", 0, 25 }, -- static at 0 degrees
-			M2 = { "S", 180, 25 }, -- static at 0 degrees
+			M2 = { "S", 0, 25 }, -- static at 0 degrees
 			M3 = { "RP", 0, -60 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
@@ -203,8 +197,7 @@ COMPONENT.BoneOperations = {
 		Default = { "S", 180, 25 },
 		Illumination = {},
 		Primary = {
-			M1 = { "RP", 0, 41.5 }, -- static at 0 degrees
-			M2 = { "S", 180, 25 }, -- static at 0 degrees
+			M2 = { "RP", 0, 41.5 }, -- static at 0 degrees
 			M3 = { "RP", 0, 83 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
@@ -331,8 +324,8 @@ COMPONENT.Patterns = {
 	["auto_vision_rotators"] = {
 		["debug"] = { 1 },
 		
-		["stage1"] = { 3 },
-		["stage2"] = { 2 },
+		["stage1"] = { 0 },
+		["stage2"] = { 3 },
 		["stage3"] = { 1 },
 	},
 	["auto_vision_traffic"] = {

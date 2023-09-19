@@ -152,13 +152,13 @@ EMV.Props = {
 	},
 	-- EXTERIOR PROPS --
 	{
-		Model = "models/gandhi/props/ts100.mdl",
+		Model = "models/gandhi/props/es100.mdl",
 		Scale = 1,
-		Pos = Vector(0, 110.5, 28.75),
+		Pos = Vector(0, 106.9, 28.6),
 		Ang = Angle( 0, 90, 0),
 		RenderGroup = RENDERGROUP_OPAQUE,
-		RenderMode = RENDERMODE_NONE
-	},
+		RenderMode = RENDERMODE_NONE,
+    },
 	{
 		Model = "models/japanplate/licenseplate.mdl",
 		Scale = .96,
@@ -176,6 +176,25 @@ EMV.Props = {
 		RenderGroup = RENDERGROUP_OPAQUE,
 		RenderMode = RENDERMODE_NONE,       
 		SubMaterials = {[0] = "rh&lr/plates/id/plate_police"}
+	},
+	-- RCMP BAR MOUNTS --
+	{
+		Model = "models/hunter/tubes/tube1x1x2.mdl",
+		Scale = Vector(.025, .025, .0484),
+		Pos = Vector(-22, -74, 44.6),
+		Ang = Angle( 0, 0, 0),
+		RenderGroup = RENDERGROUP_OPAQUE,
+		RenderMode = RENDERMODE_NONE,
+		Material = "sentry/cvpi_hd/black"
+	},
+	{
+		Model = "models/hunter/tubes/tube1x1x2.mdl",
+		Scale = Vector(.025, .025, .0484),
+		Pos = Vector(22, -74, 44.6),
+		Ang = Angle( 0, 0, 0),
+		RenderGroup = RENDERGROUP_OPAQUE,
+		RenderMode = RENDERMODE_NONE,
+		Material = "sentry/cvpi_hd/black"
 	}
 } 
 
@@ -186,6 +205,32 @@ EMV.Auto = {
 		Scale = .995,
 		Pos = Vector(0, -18, 65.55), 
 		Ang = Angle( 0, 180, 0), 
+	},
+	-- GRILLE LIGHTS --
+	{
+		ID = "NYUCPD Federal Signal Cuda TriOptic Single",
+		Scale = 1,
+		Pos = Vector( -11.1, 108, 27.56 ),
+		Ang = Angle( 0, 5, 0 ),
+		Phase = "A",
+		Color1 = "RED"
+	},
+	{
+		ID = "NYUCPD Federal Signal Cuda TriOptic Single",
+		Scale = 1,
+		Pos = Vector( 11.1, 108, 27.56 ),
+		Ang = Angle( 0, -5, 0 ),
+		Phase = "B",
+		Color1 = "RED"
+	},
+	-- REAR RCMP BAR --
+	{  
+		ID = "NYUCPD Federal Signal RCMP Bar (CVPI)",
+		Scale = 1,
+		Pos = Vector(0, -74, 51.15),
+		Ang = Angle( 0, 0, 0),
+		RenderGroup = RENDERGROUP_OPAQUE,  
+		RenderMode = RENDERMODE_NONE, 
 	},
 	-- FLASHERS --
 	{
@@ -198,11 +243,12 @@ EMV.Auto = {
 
 EMV.Sequences = {
 	Sequences = {
-		{ Name = "SCENE", Stage = "M1", Components = {}, Disconnect = {} },
+		{ Name = "AUX", Stage = "M1", Components = {}, Disconnect = {} },
+		{ Name = "SCENE", Stage = "M2", Components = {}, Disconnect = {} },
 		{ Name = "RSPND", Stage = "M3", Components = {}, Disconnect = {} }
 	},
 	Traffic = {
-		{ Name = "FLASH", Stage = "CA", Components = {}, Disconnect = {} },
+		{ Name = "CAUTION", Stage = "CA", Components = {}, Disconnect = {} },
 		{ Name = "LEFT", Stage = "L", Components = {}, Disconnect = {} },
 		{ Name = "DIVERGE", Stage = "D", Components = {}, Disconnect = {} },
 		{ Name = "RIGHT", Stage = "R", Components = {}, Disconnect = {} }
