@@ -166,7 +166,7 @@ EMV.Props = {
 		Ang = Angle( -12, -90, 0),
 		RenderGroup = RENDERGROUP_OPAQUE,
 		RenderMode = RENDERMODE_NONE,
-		SubMaterials = {[0] = "rh&lr/plates/id/plate_police"}
+		SubMaterials = {[0] = "rh&lr/plates/rh&lr_plate"}
 	},
 	{
 		Model = "models/japanplate/licenseplate.mdl",
@@ -175,7 +175,7 @@ EMV.Props = {
 		Ang = Angle( 6.4, 90, 0),
 		RenderGroup = RENDERGROUP_OPAQUE,
 		RenderMode = RENDERMODE_NONE,       
-		SubMaterials = {[0] = "rh&lr/plates/id/plate_police"}
+		SubMaterials = {[0] = "rh&lr/plates/rh&lr_plate"}
 	},
 	-- ANTENNAS --
 	{
@@ -236,7 +236,7 @@ EMV.Props = {
 		Scale = Vector(1.5, .2, .5),
 		Pos = Vector(13, 120, 20),
 		Ang = Angle( 90, 0, 0),
-		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+		SubMaterials = {[0] = "sentry/cvpi_hd/black_chrome"}
 	},
 	{
 		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
@@ -250,7 +250,7 @@ EMV.Props = {
 		Scale = Vector(1.5, .2, .5),
 		Pos = Vector(-13, 120, 20),
 		Ang = Angle( 90, 0, 0),
-		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+		SubMaterials = {[0] = "sentry/cvpi_hd/black_chrome"}
 	},
 	{
 		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
@@ -265,14 +265,14 @@ EMV.Props = {
 		Scale = Vector(2, .2, .2),
 		Pos = Vector(0, 120, 27),
 		Ang = Angle( 0, 0, 0),
-		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+		SubMaterials = {[0] = "sentry/cvpi_hd/black_chrome"}
 	},
 	{
 		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
 		Scale = Vector(2, .2, .2),
 		Pos = Vector(0, 120, 23),
 		Ang = Angle( 0, 0, 0),
-		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+		SubMaterials = {[0] = "sentry/cvpi_hd/black_chrome"}
 	},
 	-- MOUNTS
 	{
@@ -280,28 +280,28 @@ EMV.Props = {
 		Scale = Vector(1, .4, .05),
 		Pos = Vector(13, 115, 24.9),
 		Ang = Angle( 0, 90, 0),
-		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+		SubMaterials = {[0] = "sentry/cvpi_hd/black_chrome"}
 	},
 	{
 		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
 		Scale = Vector(1, .4, .05),
 		Pos = Vector(13, 115, 14.5),
 		Ang = Angle( 0, 90, 0),
-		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+		SubMaterials = {[0] = "sentry/cvpi_hd/black_chrome"}
 	},
 	{
 		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
 		Scale = Vector(1, .4, .05),
 		Pos = Vector(-13, 115, 24.9),
 		Ang = Angle( 0, 90, 0),
-		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+		SubMaterials = {[0] = "sentry/cvpi_hd/black_chrome"}
 	},
 	{
 		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
 		Scale = Vector(1, .4, .05),
 		Pos = Vector(-13, 115, 14.5),
 		Ang = Angle( 0, 90, 0),
-		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+		SubMaterials = {[0] = "sentry/cvpi_hd/black_chrome"}
 	}
 } 
 
@@ -369,7 +369,6 @@ EMV.Sequences = {
 			Preset_Components = {},
 			Lights = {
 				-- LIGHTBAR --
-				{ Vector( 0, -3, 73.6 ), Angle( 0, 90, 0 ), "takedown_vision" },
 				{ Vector( -14.5, -13.65, 73.6 ), Angle( 0, 90, 0 ), "takedown_vision" },
 				{ Vector( 14.5, -13.65, 73.6 ), Angle( 0, 90, 0 ), "takedown_vision" },
 			},
@@ -384,7 +383,6 @@ EMV.Sequences = {
 			Preset_Components = {},
 			Lights = {
 				-- LIGHTBAR --
-				{ Vector( 0, -3, 73.6 ), Angle( 0, 180, 0 ), "takedown_vision" },
 				{ Vector( -14.5, -13.65, 73.6 ), Angle( 0, 180, 0 ), "takedown_vision" },
 			},
 			Disconnect = {}
@@ -398,7 +396,6 @@ EMV.Sequences = {
 			Preset_Components = {},
 			Lights = {
 				-- LIGHTBAR --
-				{ Vector( 0, -3, 73.6 ), Angle( 0, 0, 0 ), "takedown_vision" },
 				{ Vector( 14.5, -13.65, 73.6 ), Angle( 0, 0, 0 ), "takedown_vision" },
 			},
 			Disconnect = {}
