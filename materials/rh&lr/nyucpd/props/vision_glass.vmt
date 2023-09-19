@@ -1,0 +1,7 @@
+"DecalModulate"
+{
+	"$basetexture" "rh&lr/nyucpd/props/vision_glass"
+	"$model" "1"
+	"$nocull" "1"
+}
+
