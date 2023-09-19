@@ -15,7 +15,7 @@ COMPONENT.DefaultColors = {
 	[1] = "AMBER/RED_HALOGEN",
 	[2] = "S_WHITE",
 	[3] = "RED_HALOGEN",
-	[4] = "S_WHITE",
+	[4] = "RED_HALOGEN",
 	[5] = "RED_HALOGEN",
 	[6] = "S_WHITE",
 	[7] = "AMBER/RED_HALOGEN",
@@ -127,20 +127,19 @@ COMPONENT.Bones = {
 
 COMPONENT.BoneOperations = {
 	[5] = { -- far left
-		Default = { "S", 90, 25 },
+		Default = { "S", 72, 25 },
 		Illumination = {},
 		Primary = {
-			M2 = { "RP", 0, 41.5 }, -- static at 0 degrees
-			M3 = { "RP", 0, 83 }, -- static at 0 degrees
+			M1 = { "S", 180, 25 }, -- static at 0 degrees
+			M3 = { "RP", 0, 69 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
 	},
 	[4] = { -- mid left
-		Default = { "S", 0, 25 },
+		Default = { "S", 180, 25 },
 		Illumination = {},
 		Primary = {
-			M2 = { "S", 0, 25 }, -- static at 0 degrees
-			M3 = { "RP", 0, -60 }, -- static at 0 degrees
+			M3 = { "RP", 0, -55 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
 		Illumination = {
@@ -149,43 +148,36 @@ COMPONENT.BoneOperations = {
 		},
 	},
 	[3] = { -- inner left
-		Default = { "S", 190, 25 },
+		Default = { "S", 144, 25 },
 		Illumination = {},
 		Primary = {
-			M2 = { "RP", 0, 41.5 }, -- static at 0 degrees
-			M3 = { "RP", 0, 83 }, -- static at 0 degrees
+			M1 = { "S", 0, 25 }, -- static at 0 degrees
+			M3 = { "RP", 0, 69 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
 	},
 	[2] = { -- middle
-		Default = { "S", 240, 25 },
+		Default = { "S", 216, 25 },
 		Illumination = {},
 		Primary = {
-			M2 = { "S", 0, 25 }, -- static at 0 degrees
-			M3 = { "RP", 0, -60 }, -- static at 0 degrees
+			M3 = { "A", { 60, 360-60 }, 40 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
-		Illumination = {
-			T = { "S", 0, 70 }, -- static at 0 degrees
-			R = { "S", 90, 70 }, -- static at 0 degrees
-			L = { "S", -90, 70 }, -- static at 0 degrees
-		},
 	},
 	[6] = { -- inner right
-		Default = { "S", 100, 25 },
+		Default = { "S", 288, 25 },
 		Illumination = {},
 		Primary = {
-			M2 = { "RP", 0, 41.5 }, -- static at 0 degrees
-			M3 = { "RP", 0, 83 }, -- static at 0 degrees
+			M1 = { "S", 0, 25 }, -- static at 0 degrees
+			M3 = { "RP", 0, 69 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
 	},
 	[7] = { -- middle right
-		Default = { "S", 120, 25 },
+		Default = { "S", 0, 25 },
 		Illumination = {},
 		Primary = {
-			M2 = { "S", 0, 25 }, -- static at 0 degrees
-			M3 = { "RP", 0, -60 }, -- static at 0 degrees
+			M3 = { "RP", 0, -55 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
 		Illumination = {
@@ -194,11 +186,11 @@ COMPONENT.BoneOperations = {
 		},
 	},
 	[8] = { -- far right
-		Default = { "S", 180, 25 },
+		Default = { "S", 0, 25 },
 		Illumination = {},
 		Primary = {
-			M2 = { "RP", 0, 41.5 }, -- static at 0 degrees
-			M3 = { "RP", 0, 83 }, -- static at 0 degrees
+			M1 = { "S", 180, 25 }, -- static at 0 degrees
+			M3 = { "RP", 0, 69 }, -- static at 0 degrees
 		},
 		Auxiliary = {},
 	},
@@ -237,16 +229,13 @@ COMPONENT.Sections = {
 		},
 	},
 	["auto_vision_rotators"] = {
+		-- DEBUG/RSPND
 		{
 			{ 1, "_1" },{ 2, "_2" },{ 3, "_3" },{ 4, "_4" },{ 5, "_5" },{ 6, "_6" },{ 7, "_7" },
 		},
-		-- STAGE 2
+		-- SCENE
 		{
-			{ 1, "_1", { 7, 0, 1 } },{ 2, "_2", { 9, 0, 0 } },{ 3, "_3", { 7, 0, 3 } },{ 4, "_4", { 9, 0, 3 } },{ 5, "_5", { 7, 0, 0 } },{ 6, "_6", { 9, 0, 6 } },{ 7, "_7", { 7, 0, 5 } },
-		},
-		-- STAGE 1
-		{
-			{ 1, "_1" },{ 3, "_3" },{ 5, "_5" },{ 7, "_7" }
+			{ 1, "_1", { 7, 0, 1 } },{ 3, "_3", { 7, 0, 3 } },{ 5, "_5", { 7, 0, 0 } },{ 7, "_7", { 7, 0, 5 } }
 		}
 	},
 	["auto_vision_traffic"] = {
@@ -307,7 +296,7 @@ COMPONENT.Sections = {
 			{ 8, "_8" },{ 13, "_8" },
 		},
 		
-		-- RESPONSE (From 18 to 19) --
+		-- CAUTION (From 18 to 19) --
 		{
 			{ 8, "_8" },{ 9, "_8" },{ 12, "_8" },{ 13, "_8" }
 		},
@@ -324,14 +313,14 @@ COMPONENT.Patterns = {
 	["auto_vision_rotators"] = {
 		["debug"] = { 1 },
 		
-		["stage1"] = { 0 },
-		["stage2"] = { 3 },
-		["stage3"] = { 1 },
+		["scene"] = { 2 },
+		["rspnd"] = { 1 },
 	},
 	["auto_vision_traffic"] = {
 		["debug"] = { 1 },
 		
-		["flash"] = { 18,18,18,18,18,18,19,19,19,19,19,19 },
+		["caution"] = { 18,18,18,18,18,18,19,19,19,19,19,19 },
+
 		["left"] = { 2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7,7,7,7,7,7,0,0,0 },
 		["right"] = { 12,12,12,11,11,11,10,10,10,9,9,9,8,8,8,7,7,7,7,7,7,0,0,0 },
 		["diverge"] = { 13,13,13,13,14,14,14,15,15,15,15,15,15,0,0,0 },
@@ -341,18 +330,15 @@ COMPONENT.Patterns = {
 COMPONENT.Modes = { 
 	Primary = {
 		M1 = { 
-			["auto_vision_rotators"] = "stage1",
-		},
-		M2 = { 
-			["auto_vision_rotators"] = "stage2",
+			["auto_vision_rotators"] = "scene",
 		},
 		M3 = { 
-			["auto_vision_rotators"] = "stage3",
+			["auto_vision_rotators"] = "rspnd",
 		}
 	},
 	Auxiliary = {
 		CA = {
-			["auto_vision_traffic"] = "flash"
+			["auto_vision_traffic"] = "caution"
 		},
 		L = {
 			["auto_vision_traffic"] = "left"

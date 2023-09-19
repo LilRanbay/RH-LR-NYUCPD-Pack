@@ -177,6 +177,39 @@ EMV.Props = {
 		RenderMode = RENDERMODE_NONE,       
 		SubMaterials = {[0] = "rh&lr/plates/id/plate_police"}
 	},
+	-- ANTENNAS --
+	{
+		Model = "models/sentry/antenna3.mdl",
+		Scale = Vector(1.05, 1.05, 1.3),
+		Pos = Vector(37, -108, 39),
+		Ang = Angle( 0, 0, 0),
+		RenderGroup = RENDERGROUP_OPAQUE,
+		RenderMode = RENDERMODE_NONE,
+	},
+	{
+		Model = "models/sentry/antenna1.mdl",
+		Scale = 1,   
+		Pos = Vector(-20, -101, 47.595),
+		Ang = Angle( -4.15, 0, 3.4),
+		RenderGroup = RENDERGROUP_OPAQUE,
+		RenderMode = RENDERMODE_NONE,
+	},
+	{
+		Model = "models/sentry/antenna1.mdl", 
+		Scale = 1,   
+		Pos = Vector(20, -101, 47.595),
+		Ang = Angle( 4.15, 0, 3.4),
+		RenderGroup = RENDERGROUP_OPAQUE,
+		RenderMode = RENDERMODE_NONE,
+	},
+	{
+		Model = "models/sentry/antenna6.mdl", 
+		Scale = 0.4,  
+		Pos = Vector(0, -111, 47.4),
+		Ang = Angle( 0, 0, 4),
+		RenderGroup = RENDERGROUP_OPAQUE,
+		RenderMode = RENDERMODE_NONE,
+	},
 	-- RCMP BAR MOUNTS --
 	{
 		Model = "models/hunter/tubes/tube1x1x2.mdl",
@@ -195,6 +228,80 @@ EMV.Props = {
 		RenderGroup = RENDERGROUP_OPAQUE,
 		RenderMode = RENDERMODE_NONE,
 		Material = "sentry/cvpi_hd/black"
+	},
+	-- PUSHBAR (1-10) (Made by Rin) --
+	-- SIDES
+	{
+		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
+		Scale = Vector(1.5, .2, .5),
+		Pos = Vector(13, 120, 20),
+		Ang = Angle( 90, 0, 0),
+		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+	},
+	{
+		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
+		Scale = Vector(1.45, .4, .45),
+		Pos = Vector(13, 121, 20),
+		Ang = Angle( 90, 0, 0),
+		SubMaterials = {[0] = "sentry/cvpi_hd/black_ridges"}
+	},
+	{
+		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
+		Scale = Vector(1.5, .2, .5),
+		Pos = Vector(-13, 120, 20),
+		Ang = Angle( 90, 0, 0),
+		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+	},
+	{
+		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
+		Scale = Vector(1.45, .4, .45),
+		Pos = Vector(-13, 121, 20),
+		Ang = Angle( 90, 0, 0),
+		SubMaterials = {[0] = "sentry/cvpi_hd/black_ridges"}
+	},
+	-- CENTER BRACES
+	{
+		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
+		Scale = Vector(2, .2, .2),
+		Pos = Vector(0, 120, 27),
+		Ang = Angle( 0, 0, 0),
+		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+	},
+	{
+		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
+		Scale = Vector(2, .2, .2),
+		Pos = Vector(0, 120, 23),
+		Ang = Angle( 0, 0, 0),
+		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+	},
+	-- MOUNTS
+	{
+		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
+		Scale = Vector(1, .4, .05),
+		Pos = Vector(13, 115, 24.9),
+		Ang = Angle( 0, 90, 0),
+		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+	},
+	{
+		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
+		Scale = Vector(1, .4, .05),
+		Pos = Vector(13, 115, 14.5),
+		Ang = Angle( 0, 90, 0),
+		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+	},
+	{
+		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
+		Scale = Vector(1, .4, .05),
+		Pos = Vector(-13, 115, 24.9),
+		Ang = Angle( 0, 90, 0),
+		SubMaterials = {[0] = "gandhi/props/nypd/white"}
+	},
+	{
+		Model = "models/sprops/cuboids/height06/size_1/cube_6x12x6.mdl",
+		Scale = Vector(1, .4, .05),
+		Pos = Vector(-13, 115, 14.5),
+		Ang = Angle( 0, 90, 0),
+		SubMaterials = {[0] = "gandhi/props/nypd/white"}
 	}
 } 
 
@@ -217,10 +324,10 @@ EMV.Auto = {
 	},
 	{
 		ID = "NYUCPD Federal Signal Cuda TriOptic Single",
-		Scale = 1,
+		Scale = 1, 
 		Pos = Vector( 11.1, 108, 27.56 ),
 		Ang = Angle( 0, -5, 0 ),
-		Phase = "B",
+		Phase = "C",
 		Color1 = "RED"
 	},
 	-- REAR RCMP BAR --
@@ -243,8 +350,7 @@ EMV.Auto = {
 
 EMV.Sequences = {
 	Sequences = {
-		{ Name = "AUX", Stage = "M1", Components = {}, Disconnect = {} },
-		{ Name = "SCENE", Stage = "M2", Components = {}, Disconnect = {} },
+		{ Name = "SCENE", Stage = "M1", Components = {}, Disconnect = {} },
 		{ Name = "RSPND", Stage = "M3", Components = {}, Disconnect = {} }
 	},
 	Traffic = {
