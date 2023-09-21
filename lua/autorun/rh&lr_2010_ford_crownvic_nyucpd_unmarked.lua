@@ -198,7 +198,7 @@ EMV.Auto = {
 		Ang = Angle( 0, 90, 0 ),
 		Phase = "",
 		Color1 = "RED",
-		Color2 = "AMBER",
+		Color2 = "RED",
 		BodyGroups = {
 			{1,1},
 			{2,1}
