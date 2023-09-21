@@ -12,13 +12,13 @@ COMPONENT.Category = "Lightbar"
 COMPONENT.RotationEnabled = true
 COMPONENT.Bodygroups = {}
 COMPONENT.DefaultColors = {
-	[1] = "AMBER/RED_HALOGEN",
-	[2] = "S_WHITE",
+	[1] = "RED_HALOGEN",
+	[2] = "AMBER/S_WHITE",
 	[3] = "RED_HALOGEN",
 	[4] = "RED_HALOGEN",
 	[5] = "RED_HALOGEN",
-	[6] = "S_WHITE",
-	[7] = "AMBER/RED_HALOGEN",
+	[6] = "AMBER/S_WHITE",
+	[7] = "RED_HALOGEN",
 	-- 
 	[8] = "AMBER",
 }
