@@ -157,7 +157,7 @@ COMPONENT.BoneOperations = {
 		Auxiliary = {},
 	},
 	[2] = { -- middle
-		Default = { "S", 216, 25 },
+		Default = { "S", 0, 25 },
 		Illumination = {},
 		Primary = {
 			M3 = { "A", { 60, 360-60 }, 40 }, -- static at 0 degrees

@@ -336,8 +336,8 @@ EMV.Auto = {
 		Scale = 1,
 		Pos = Vector(0, -74, 51.15),
 		Ang = Angle( 0, 0, 0),
-		RenderGroup = RENDERGROUP_OPAQUE,  
-		RenderMode = RENDERMODE_NONE, 
+		RenderGroup = RENDERGROUP_OPAQUE,
+		RenderMode = RENDERMODE_NONE
 	},
 	-- FLASHERS --
 	{
